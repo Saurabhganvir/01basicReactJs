@@ -1,6 +1,6 @@
 import React from 'react';
 
-function Card1( {username="Sarah" , post="Not Specified", image="https://images.unsplash.com/photo-1680596332569-94162f758390?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGZhbGNvbnxlbnwwfHwwfHx8MA%3D%3D"} ){
+function Card1({username="Sarah" , post="Not Specified", image="https://images.unsplash.com/photo-1680596332569-94162f758390?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NjB8fGZhbGNvbnxlbnwwfHwwfHx8MA%3D%3D"} ){
     //directly destructure 
     // (props) 
     // console.log(props)
@@ -12,7 +12,7 @@ function Card1( {username="Sarah" , post="Not Specified", image="https://images.
                     <blockquote>
                     <p className="text-lg font-medium">
                         “Tailwind CSS is the only framework that I've seen scale
-                        on large teams. It’s easy to customize, adapts to any design,
+                        on large teams. Its easy to customize, adapts to any design,
                         and the build size is tiny.”
                     </p>
                     </blockquote>
