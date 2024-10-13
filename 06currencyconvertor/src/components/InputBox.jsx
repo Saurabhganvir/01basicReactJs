@@ -19,12 +19,12 @@ function InputBox({
             <div className='w-1/2'>
                 <label htmlFor={id} className='text-black/40 mb-2 inline-block'> {label} </label>
                 <input 
-                    type="text"
+                    type="number"
                     className='outline-none w-full bg-transparent py-1.5'
                     placeholder='Amount'
                     disabled={amountDisabled}
                     value={amount}
-                    onChange={(e)=>{onAmountChange && Number(onAmountChange(e.target.value))}}
+                    onChange={(e)=>{onAmountChange && onAmountChange(Number(e.target.value))}}
                     id={id}
                 />
             </div>
@@ -36,7 +36,7 @@ function InputBox({
                     className='rounded-lg px-1 py-1 bg-gray-100 cursor-pointer outline-none'
                     value={selectedCurrency}
                     onChange={(e)=>{onCurrencyChange && onCurrencyChange(e.target.value)}}
-                    disabled = {currencyDisabled}  
+                    disabled={currencyDisabled}  
                 >
                     {currencyOptions.map((currency)=>(
                         <option key={currency} value={currency}>{currency}</option>
