@@ -20,6 +20,10 @@ const router = createBrowserRouter(
         <Route path=':userid' element={<User />} />
       </Route>
       <Route path='github' element={<Github/>}/>
+      {/* <Route 
+      loader={githubInfoLoader}
+      path='github' 
+      element={<Github />} /> */}
       <Route path='*' element={<div>not found</div>}/>
     </Route>
   )
